@@ -1,0 +1,51 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jay Skript and the Domsters</title>
+    <script src="{% static 'scripts/modernizr.js' %}"></script>
+    <link rel="stylesheet" media="screen" href="{% static 'styles/basic.css' %}"/>
+
+</head>
+<body>
+<header>
+    <img src="{% static 'images/basshead.png' %}" alt="Jay Skript and the Domsters" />
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="photos.html">Photos</a> </li>
+            <li><a href="live.html">Live</a> </li>
+            <li><a href="contact.html">Contact</a> </li>
+        </ul>
+    </nav>
+</header>
+<article>
+    <h1>Photo of the Band</h1>
+    <ul id="imagegallery">
+        <li>
+            <a href="{% static 'images/photos/concert.jpg' %}" title="The crowd goes wild">
+                <img src="{% static 'images/photos/thumbnail_concert.jpg' %}" alt="the band in concert"/>
+            </a>
+        </li>
+        <li>
+            <a href="{% static 'images/photos/bassist.jpg' %}" title="An atmospheric moment">
+                <img src="{% static 'images/photos/thumbnail_bassist.jpg' %}" alt="the bassist"/>
+            </a>
+        </li>
+        <li>
+            <a href="{% static 'images/photos/guitarist.jpg' %}" title="Rocking out">
+                <img src="{% static 'images/photos/thumbnail_guitarist.jpg' %}" alt="the guitarist"/>
+            </a>
+        </li>
+        <li>
+            <a href="{% static 'images/photos/crowd.jpg' %}" title="Encore! Encore!">
+                <img src="{% static 'images/photos/thumbnail_crowd.jpg' %}" alt="the audience"/>
+            </a>
+        </li>
+    </ul>
+</article>
+</body>
+<script src="{% static 'scripts/global.js' %}"></script>
+</html>

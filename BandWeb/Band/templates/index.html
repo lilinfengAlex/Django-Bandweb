@@ -1,0 +1,36 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jay Skript and the Domsters</title>
+    <script src="{% static 'scripts/modernizr.js' %}"></script>
+    <link rel="stylesheet" media="screen" href="{% static 'styles/basic.css' %}"/>
+
+</head>
+<body>
+<header>
+    <img src="{% static 'images/logo.png' %}" alt="Jay Skript and the Domsters" />
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="photos.html">Photos</a> </li>
+            <li><a href="live.html">Live</a> </li>
+            <li><a href="contact.html">Contact</a> </li>
+        </ul>
+    </nav>
+</header>
+<article>
+    <h1>Welcome!</h1>
+    <p id="intro">
+        Welcome to the official website of Jay Skript and the Domsters.
+        Here, you can <a href="about.html" title="About">learn more about the band</a>,
+        view <a href="photos.html" title="Photos">photos of the band</a>,
+        find out about <a href="live.html" title="Tour Date">tour date</a>
+        and <a href="contact.html" title="Contact">get in touch with the band</a>.
+    </p>
+</article>
+</body>
+<script src="{% static 'scripts/global.js' %}"></script>
+</html>

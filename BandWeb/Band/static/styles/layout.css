@@ -1,0 +1,95 @@
+section,header,article,nav{
+    display: block;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    margin: 1em 10%;
+}
+header{
+    border: red .1em solid;
+    border-bottom-width: 0;
+}
+
+header nav{
+    background-image: url(../images/navbar.png);
+    border: .1em solid black;
+    padding-left: 20%;
+}
+
+header nav ul{
+    width: 100%;
+    overflow: hidden;
+    border: .1em solid red;
+}
+
+header nav li{
+    display: inline;
+}
+
+header nav li a{
+    float: left;
+    padding: .5em 2em;
+    border-right: .1em solid;
+}
+
+article{
+    border: .1em solid red;
+    border-top-width: 0;
+    padding: 2em 20%;
+}
+article img{
+    border: .1em solid;
+}
+article nav{
+    margin-top: 9px;
+}
+#slideshow{
+    width:150px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+}
+#preview{
+    position: absolute;
+    border-width: 0;
+    outline-width: 0;
+}
+#frame{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+#imagegallery{
+    margin-top: 8px;
+}
+#imagegallery li{
+    display: inline;
+}
+table{
+    margin-top: 10px;
+}
+td{
+    padding: .5em 3em;
+}
+dl{
+    overflow: hidden;
+}
+dt{
+    float: left;
+}
+dd{
+    float: left;
+}
+form{
+    margin-top: 5px;
+}
+label{
+    display: block;
+}
+fieldset{
+    border: 0;
+}
